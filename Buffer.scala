@@ -380,12 +380,12 @@ class Buffer(s: String) {
     return false
   }
 
-  /**
+  /**#
    * Find Backwards.  This generalises the character version of find backwards.
    * The user provides a predicate to specify the search condition.
    * This operation does not change any variable other than the cursor position.
    */
-   //TODO: Still need to fix
+   //TODO: Still need to fix, doesnt work correctly
   def fb(p: Char => Boolean): Boolean = {
     buffer.toString().toUpperCase
 
